@@ -13,7 +13,7 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"github.com/mkcorporate/ironman/domain/config"
+	"github.com/oktopriima/ironman/domain/config"
 )
 
 type ServerRoute struct {

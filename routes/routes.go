@@ -11,7 +11,7 @@ package routes
 import (
 	"github.com/KulinaID/kulina-go-libraries/kumiddleware"
 	"github.com/gin-gonic/gin"
-	"github.com/mkcorporate/ironman/domain/config"
+	"github.com/oktopriima/ironman/domain/config"
 )
 
 func InvokeRoute(engine *gin.Engine)  {

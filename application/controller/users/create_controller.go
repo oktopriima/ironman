@@ -11,8 +11,8 @@ package users
 import (
 	"github.com/jinzhu/copier"
 
-	"github.com/mkcorporate/ironman/application/request"
-	"github.com/mkcorporate/ironman/domain/core/model"
+	"github.com/oktopriima/ironman/application/request"
+	"github.com/oktopriima/ironman/domain/core/model"
 )
 
 func (u userController) CreateController(request request.UserRequest) (interface{}, error) {

@@ -11,12 +11,13 @@ package main
 import (
 	"go.uber.org/dig"
 
-	"github.com/mkcorporate/ironman/container"
+	"github.com/oktopriima/ironman/container"
 )
 
 func BuildContainer() *dig.Container {
 	c := dig.New()
 	c = container.BuildConfigContainer(c)
+	c = container.BuildControllerContainer(c)
 
 	return c
 }

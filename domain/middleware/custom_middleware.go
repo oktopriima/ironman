@@ -12,7 +12,7 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	"github.com/mkcorporate/ironman/domain/config"
+	"github.com/oktopriima/ironman/domain/config"
 	"net/http"
 	"strings"
 

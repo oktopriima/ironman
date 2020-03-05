@@ -3,7 +3,7 @@
 * created by oktoprima
 * email : octoprima93@gmail.com
 * github : https://github.com/oktopriima
-* created at 22.02
+* created at 22.11
 **/
 
 package container
@@ -11,13 +11,13 @@ package container
 import (
 	"go.uber.org/dig"
 
-	"github.com/oktopriima/ironman/application/controller/users"
+	"github.com/oktopriima/ironman/application/httphandler/users"
 )
 
-func BuildControllerContainer(container *dig.Container) *dig.Container {
+func BuildHandlerContainer(container *dig.Container) *dig.Container {
 	var err error
 
-	if err = container.Provide(users.NewUserController); err != nil {
+	if err = container.Provide(users.NewUserHandler); err != nil {
 		panic(err)
 	}
 

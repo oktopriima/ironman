@@ -13,9 +13,9 @@ import (
 
 	_ "github.com/go-sql-driver/mysql"
 
-	"github.com/mkcorporate/ironman/domain/config"
-	"github.com/mkcorporate/ironman/domain/middleware"
-	"github.com/mkcorporate/ironman/routes"
+	"github.com/oktopriima/ironman/domain/config"
+	"github.com/oktopriima/ironman/domain/middleware"
+	"github.com/oktopriima/ironman/routes"
 )
 
 func init() {

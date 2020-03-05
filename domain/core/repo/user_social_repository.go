@@ -10,7 +10,7 @@ package repo
 
 import (
 	"github.com/jinzhu/gorm"
-	"github.com/mkcorporate/ironman/domain/core/model"
+	"github.com/oktopriima/ironman/domain/core/model"
 )
 
 type UserSocialRepository interface {

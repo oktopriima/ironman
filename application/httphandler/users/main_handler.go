@@ -11,7 +11,7 @@ package users
 import (
 	"github.com/gin-gonic/gin"
 
-	"github.com/mkcorporate/ironman/application/controller/users"
+	"github.com/oktopriima/ironman/application/controller/users"
 )
 
 type UserHandler interface {

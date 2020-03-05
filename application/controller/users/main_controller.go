@@ -11,8 +11,8 @@ package users
 import (
 	"github.com/jinzhu/gorm"
 
-	"github.com/mkcorporate/ironman/application/request"
-	"github.com/mkcorporate/ironman/domain/core/repo"
+	"github.com/oktopriima/ironman/application/request"
+	"github.com/oktopriima/ironman/domain/core/repo"
 )
 
 type UserController interface {

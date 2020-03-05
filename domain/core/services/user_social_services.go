@@ -11,8 +11,8 @@ package services
 import (
 	"encoding/json"
 	"github.com/jinzhu/gorm"
-	"github.com/mkcorporate/ironman/domain/core/model"
-	"github.com/mkcorporate/ironman/domain/core/repo"
+	"github.com/oktopriima/ironman/domain/core/model"
+	"github.com/oktopriima/ironman/domain/core/repo"
 )
 
 type userSocialServices struct {

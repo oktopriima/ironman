@@ -13,7 +13,7 @@ import (
 	"github.com/jinzhu/gorm"
 	"go.uber.org/dig"
 
-	"github.com/mkcorporate/ironman/domain/config"
+	"github.com/oktopriima/ironman/domain/config"
 )
 
 func BuildConfigContainer(container *dig.Container) *dig.Container {

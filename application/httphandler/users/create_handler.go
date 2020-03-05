@@ -13,8 +13,8 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"github.com/mkcorporate/ironman/application/request"
-	"github.com/mkcorporate/ironman/domain/response"
+	"github.com/oktopriima/ironman/application/request"
+	"github.com/oktopriima/ironman/domain/response"
 )
 
 func (u userHandler) CreateHandler(ctx *gin.Context) {
