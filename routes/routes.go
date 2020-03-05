@@ -11,10 +11,15 @@ package routes
 import (
 	"github.com/KulinaID/kulina-go-libraries/kumiddleware"
 	"github.com/gin-gonic/gin"
+
+	"github.com/oktopriima/ironman/application/httphandler/users"
 	"github.com/oktopriima/ironman/domain/config"
 )
 
-func InvokeRoute(engine *gin.Engine)  {
+func InvokeRoute(
+	engine *gin.Engine,
+	user users.UserHandler,
+) {
 	conf := config.NewConfig()
 	route := engine.Group("api/" + conf.GetString("app.version.tag") + conf.GetString("app.version.value"))
 
@@ -23,5 +28,11 @@ func InvokeRoute(engine *gin.Engine)  {
 	route.Use(gin.ErrorLogger())
 
 	route.OPTIONS("/*path", kumiddleware.CORSMiddleware())
+
+	// user route
+	{
+		userRoute := route.Group("users")
+		userRoute.POST("", user.CreateHandler)
+	}
 
 }

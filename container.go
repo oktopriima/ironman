@@ -18,6 +18,8 @@ func BuildContainer() *dig.Container {
 	c := dig.New()
 	c = container.BuildConfigContainer(c)
 	c = container.BuildControllerContainer(c)
+	c = container.BuildHandlerContainer(c)
+	c = container.BuildServiceContainer(c)
 
 	return c
 }
